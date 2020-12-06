@@ -18,15 +18,26 @@ const Menu = ({ history }) => (
           Home
         </Link>
       </li>
-      <li className="nav-item">
+      {isAutheticated() && isAutheticated().user.role === 0 &&(
+        <li className="nav-item">
         <Link
           style={currentTab(history, "/cart")}
           className="nav-link"
           to="/cart"
         >
-          Cart
+          Bucket
         </Link>
       </li>
+      )}
+      {/* <li className="nav-item">
+        <Link
+          style={currentTab(history, "/cart")}
+          className="nav-link"
+          to="/cart"
+        >
+          Bucket
+        </Link>
+      </li> */}
       {isAutheticated() && isAutheticated().user.role === 0 && (
         <li className="nav-item">
           <Link
@@ -34,7 +45,7 @@ const Menu = ({ history }) => (
             className="nav-link"
             to="/user/dashboard"
           >
-            U. Dashboard
+            User Dashboard
           </Link>
         </li>
       )}
@@ -45,7 +56,7 @@ const Menu = ({ history }) => (
             className="nav-link"
             to="/admin/dashboard"
           >
-            A. Dashboard
+            Trainer Dashboard
           </Link>
         </li>
       )}

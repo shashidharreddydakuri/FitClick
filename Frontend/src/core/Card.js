@@ -35,7 +35,7 @@ const Card = ({
           onClick={addToCart}
           className="btn btn-block btn-outline-success mt-2 mb-2"
         >
-          Add to Cart
+          Add to Bucket
         </button>
       )
     );
@@ -51,7 +51,7 @@ const Card = ({
           }}
           className="btn btn-block btn-outline-danger mt-2 mb-2"
         >
-          Remove from cart
+          Remove from Bucket
         </button>
       )
     );
