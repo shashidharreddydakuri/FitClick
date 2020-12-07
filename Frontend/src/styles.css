@@ -17,6 +17,109 @@ body {
 } */
 @import url('https://fonts.googleapis.com/css?family=Black+Ops+One|Oswald:300,400&display=swap');
 
+.header-section{
+  width: 100%;
+  height: 100vh;
+  /* margin-top: -5rem; */
+  padding: 0;
+  position: relative;
+  clip-path: polygon(0 0 , 100% 0, 100% 85%, 50% 100%, 0% 85%);
+  z-index: 10;
+}
+
+.hero-heading{
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  height: 52%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 10;
+}
+
+
+.heading__header{
+  font-size: 4rem;
+  color: #ddd;
+  font-weight: 300;
+}
+
+.heading__header--sub{
+  left:-0%;
+  text-align: left;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.header-logo{
+  color: white;
+  background: var(--red);
+  /* filter: brightness(50%); */
+  
+  font-family: 'Black Ops One', cursive;
+  font-size: 5rem;
+  padding: .5rem 1rem;
+  margin-right: 1rem;
+}
+
+
+.hero-video{
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 1;
+  filter: sepia(1) brightness(.47);  
+}
+
+.hero-heading-sub{
+  color: white;
+  filter: brightness(200%);
+
+  z-index: 10;
+}
+
+.next-btn{
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 2.5rem;
+  animation: vertical_loop infinite 1s;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.next-btn:hover{
+  transform: scale(1.5) translateY(-8px);
+  color: var(--red);
+}
+
+@keyframes vertical_loop{
+  50%{
+    transform: translateY(-3px);
+  }
+}
+
+.next-btn:focus{
+  outline: none;
+}
+
+@media (min-width:1000px){
+  .header-section{
+    clip-path: polygon(0 0 , 100% 0, 100% 100%, 0% 85%);
+  }
+  .next-btn{
+    bottom: 14%;
+  }
+}
+
+
 .footer{
   height: 75vh;
   /* background-image: linear-gradient(to bottom right, var(--black-2), var(--black-1), #123); */
@@ -29,9 +132,9 @@ body {
 }
 
 .footer-container{
-  height: 200%;
+  height: 250%;
   max-width:350px;
-  max-height: 450px;
+  max-height: 439px;
   margin: auto;
   padding: 3rem;
   display: flex;

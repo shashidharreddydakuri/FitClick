@@ -1,6 +1,8 @@
 import React from "react";
 import Menu from "./Menu";
 import Footer from './Footer'
+import vid from '../assets/hero.mp4';
+import hero from '../assets/floor.jpg';
 const Base = ({
   title = "My Title",
   description = "My desription",
@@ -10,6 +12,7 @@ const Base = ({
   <div>
     <Menu />
     <div className="container-fluid">
+     
       <div className="jumbotron bg-dark text-white text-center">
         <h2 className="display-4">{title}</h2>
         <p className="lead">{description}</p>

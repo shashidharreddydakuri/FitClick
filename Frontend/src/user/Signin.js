@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Base from "../core/Base";
 import { Redirect } from "react-router-dom";
-
+import Menu from '../core/Menu'
+import Footer from '../core/Footer'
+import hero from '../assets/sign.jpg';
 import { signin, authenticate, isAutheticated } from "../auth/helper";
 
 const Signin = () => {
@@ -111,14 +113,30 @@ const Signin = () => {
   };
 
   return (
-    <Base title="Sign In page" description="A page for user to sign in!">
-      {loadingMessage()}
+    <div>
+    <Menu/>
+     <header className="header-section" onContextMenu={e=>e.preventDefault()}>
+                {/* <video autoPlay playsInline muted loop className="hero-video">
+                    <source  src={vid} type="video/mp4"/> */}
+                    <img src={hero} alt="man lifting weights"/>
+                    {/* Your browser does not support the video. Sorry for the inconvenience.
+                </video> */}
+                <div className="hero-heading">
+                    <h1>
+                       Signup<br/>
+                    </h1>
+                    <h4 className="">
+                    {loadingMessage()}
       {errorMessage()}
       {signInForm()}
-      {performRedirect()}
-
+      {performRedirect()} <br/>
+                    Just One Click away from the Fitness <br/>
+                    </h4>
+                    </div>
+                    </header>
+    <Footer/>
       {/* <p className="text-white text-center">{JSON.stringify(values)}</p> */}
-    </Base>
+    </div>
   );
 };
 

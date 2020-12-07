@@ -1,54 +1,44 @@
-// import React, { useState, useEffect } from "react";
-// import "../styles.css";
-// import { API } from "../backend";
-// import Base from "./Base";
-// import Card from "./Card";
-// import { getProducts } from "./helper/coreapicalls";
-
-// export default function Home() {
-//   const [products, setProducts] = useState([]);
-//   const [error, setError] = useState(false);
-
-//   const loadAllProduct = () => {
-//     getProducts().then(data => {
-//       if (data.error) {
-//         setError(data.error);
-//       } else {
-//         setProducts(data);
-//       }
-//     });
-//   };
-
-//   useEffect(() => {
-//     loadAllProduct();
-//   }, []);
-
-//   return (
-//     <Base title="Home Page" description="Welcome to the Tshirt Store">
-//       <div className="row text-center">
-//         <h1 className="text-white">All of tshirts</h1>
-//         <div className="row">
-//           {products.map((product, index) => {
-//             return (
-//               <div key={index} className="col-4 mb-4">
-//                 <Card product={product} />
-//               </div>
-//             );
-//           })}
-//         </div>
-//       </div>
-//     </Base>
-//   );
-// }
-import React from "react";
-import Base from "./Base";
+import React from 'react'
+// import Navbar from './Navbar';
+import Menu from './Menu';
+import vid from '../assets/hero.mp4';
+import hero from '../assets/floor.jpg';
+import Footer from './Footer';
+import { FaAngleDown } from 'react-icons/fa';
+// import AboutHome from './AboutHome';
 
 const Home = () => {
-  return (
-    <Base title="Home Page" description="Welcome to the Tshirt Store">
-      <h1>This is Home page</h1>
-    </Base>
-  );
-};
+    return (
+        <main>
+            <Menu/>
+            <header className="header-section" onContextMenu={e=>e.preventDefault()}>
+                <video autoPlay playsInline muted loop className="hero-video">
+                    <source  src={vid} type="video/mp4"/>
+                    <img src={hero} alt="man lifting weights"/>
+                    Your browser does not support the video. Sorry for the inconvenience.
+                </video>
+                <div className="hero-heading">
+                    <h2 className="heading__header--sub">
+                       <span className="header-logo">FitClick</span><br/>
+                    </h2>
+                    <h1 className="heading__header">
+                    Click It. <br/>
+                    Get Fit. <br/> Get on with Life.
+                    </h1>
+                </div>
+                    {/* <button 
+                    className="next-btn" 
+                    aria-label="Discover Fit Art"
+                    onClick = {()=>document.getElementById('about').scrollIntoView()}>
+                        <FaAngleDown/>
+                    </button> */}
+            </header>
+            {/* <div id="about">
+                <AboutHome />
+            </div> */}
+            <Footer />
+        </main>
+    )
+}
 
-export default Home;
+export default Home

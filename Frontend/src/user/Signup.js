@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import Base from "../core/Base";
+import Menu from '../core/Menu'
+import Footer from '../core/Footer'
+import hero from '../assets/floor.jpg';
 import { Link } from "react-router-dom";
 import { signup } from "../auth/helper";
-
+import vid from '../assets/180419_Boxing_A1_04.mp4';
 const Signup = () => {
   const [values, setValues] = useState({
     name: "",
@@ -113,12 +116,32 @@ const Signup = () => {
   };
 
   return (
-    <Base title="Sign up page" description="A page for user to sign up!">
-      {successMessage()}
+    <div>
+    <Menu/>
+    <header className="header-section" onContextMenu={e=>e.preventDefault()}>
+                <video autoPlay playsInline muted loop className="hero-video">
+                    <source  src={vid} type="video/mp4"/>
+                    <img src={hero} alt="man lifting weights"/>
+                    Your browser does not support the video. Sorry for the inconvenience.
+                </video>
+                <div className="hero-heading">
+                    <h1>
+                       Signup<br/>
+                    </h1>
+                    <h4 className="">
+                    {successMessage()}
+                     {errorMessage()}
+                    {signUpForm()} <br/>
+                    Fitness at your doorstep <br/>
+                    </h4>
+                    </div>
+                    </header>
+      {/* {successMessage()}
       {errorMessage()}
-      {signUpForm()}
-      {/* <p className="text-white text-center">{JSON.stringify(values)}</p> */}
-    </Base>
+      {signUpForm()} */}
+      
+      <Footer/>
+    </div>
   );
 };
 

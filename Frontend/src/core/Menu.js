@@ -14,7 +14,7 @@ const Menu = ({ history }) => (
   <div>
   
     <ul className="nav nav-tabs NavbarItems">
-    <h1 className="navbar-logo">FitClick</h1>
+    {/* <i class="fas fa-dumbbell"></i><h1 className="navbar-logo">FitClick</h1> */}
       <li className="nav-item">
         <Link style={currentTab(history, "/")} className="" to="/">
          <i class="fa fa-home" aria-hidden="true"></i> Home 
@@ -70,7 +70,7 @@ const Menu = ({ history }) => (
               className="nav-link"
               to="/signup"
             >
-              Signup
+             <i class="fas fa-user-plus"></i> Signup
             </Link>
           </li>
           <li className="nav-item">
@@ -79,7 +79,7 @@ const Menu = ({ history }) => (
               className="nav-link"
               to="/signin"
             >
-              Sign In
+           <i class="fas fa-sign-in-alt"></i> Sign In
             </Link>
           </li>
         </Fragment>

@@ -13,20 +13,6 @@ const Footer = () => {
                     <FaTwitter className="footer-icon"/>
                     <FaSnapchat className="footer-icon"/>
                 </div>
-                {/* <div className="footer-sub location">
-                <strong className="footer-subheading">Location</strong>
-                    <strong className="footer-desc">216, Main Road, Ithaca, NY -14850</strong>
-                    <strong className="footer-desc">Monday Through Thursday (6AM to 8PM)</strong>
-                    <strong className="footer-desc">Friday (6AM to 6PM)</strong>
-                </div>
-                <div className="alt-location">
-                    <strong className="footer-subheading">Location</strong>
-                    <span className="footer-desc">
-                        216 Main Road, Ithaca, NY-14580
-                        <br/>
-                        Monday through Thursday (6AM to 8Pm). Friday (6AM to 6Pm)
-                    </span>
-                </div> */}
 
             <div className="wrapper">
               <div className="footer-sub">
@@ -39,7 +25,7 @@ const Footer = () => {
                 <div className="footer-sub">
                     <strong className="footer-subheading">Services</strong>
                     <small>Personal Trainer</small>
-                    <small> Nutriotional Guidances</small>
+                    <small> Nutritional Guidances</small>
                     <small> Weight Loss Program</small>
                 </div>
               </div>
