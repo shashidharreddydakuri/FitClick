@@ -300,7 +300,7 @@ body {
 
 .heading__header{
   font-size: 4rem;
-  color: #ddd;
+  color: red;
   font-weight: 300;
 }
 
@@ -313,7 +313,7 @@ body {
 
 .header-logo{
   color: white;
-  background: var(--red);
+  background: var(--green);
   /* filter: brightness(50%); */
   
   font-family: 'Black Ops One', cursive;
@@ -323,18 +323,19 @@ body {
 }
 
 
+
 .hero-video{
   height: 100%;
-  width:100%;
-  object-fit: cover;
+  width:70%;
+  
   object-position: center;
   opacity: 1;
-  filter: sepia(1) brightness(.47);  
+  filter: sepia(0) brightness(.90);  
 }
 
 .hero-heading-sub{
   color: white;
-  filter: brightness(200%);
+  filter: brightness(500%);
 
   z-index: 10;
 }
@@ -700,7 +701,7 @@ body {
 }
 
 .footer-subheading{
-  color: grey;
+  color: yellow;
   font-size: 1.25rem;
   text-align: center;
   cursor: pointer;
@@ -742,7 +743,7 @@ body {
   }
   .footer-container{
     justify-content: flex-end;
-    padding: 2.5rem 0;
+    padding: 2.5rem 1;
   }
   .footer-subheading{
     font-size: 1.7rem;

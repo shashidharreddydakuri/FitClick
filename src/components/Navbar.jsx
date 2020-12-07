@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <NavLink to="/" className="navbar-brand">Fit-Art</NavLink>
+            <NavLink to="/" className="navbar-brand">CLICK-FIT</NavLink>
             <button 
                 className="navbar-toggler"
                 onClick = {()=>SetMobile(!mobile)}    

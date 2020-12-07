@@ -20,7 +20,7 @@ const About = () => {
                     <section className="about-section">
                         <h1 className="about-heading">About Us</h1>
                         <p className="about-paragraph">
-                            We at Fit-Art, have taken a vow to make our #fitArmy healthy and happy. We have been winning the battle for the last 10 years when we started our journey. Today our family comprises thousands of members and we are growing every day.
+                            We at Click-Fit, have taken a vow to make our #Click-Fit Army healthy and happy. We have been winning the battle for the last 10 years when we started our journey. Today our family comprises thousands of members and we are growing every day.
                         </p>
                         <p className="about-paragraph">
                             We have trained experts with great education,experience and insight who will help you to be fit and healthy and help you optimize the transition process.

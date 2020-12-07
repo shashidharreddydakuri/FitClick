@@ -15,16 +15,16 @@ const Footer = () => {
                 </div>
                 <div className="footer-sub location">
                 <strong className="footer-subheading">Location</strong>
-                    <strong className="footer-desc">216, Main Road, Ithaca, NY -14850</strong>
-                    <strong className="footer-desc">Monday Through Thursday (6AM to 8PM)</strong>
-                    <strong className="footer-desc">Friday (6AM to 6PM)</strong>
+                    <strong className="footer-desc">4th floor,GMR&GS complex,gachibowli,hyderabad</strong>
+                    <strong className="footer-desc">Monday Through saturday (6AM to 8PM)</strong>
+                    <strong className="footer-desc">sunday (6AM to 6PM)</strong>
                 </div>
                 <div className="alt-location">
                     <strong className="footer-subheading">Location</strong>
                     <span className="footer-desc">
-                        216 Main Road, Ithaca, NY-14580
+                       HYDERABAD,GACHIBOWLI,GMR&GS COMPLEX,4th floor
                         <br/>
-                        Monday through Thursday (6AM to 8Pm). Friday (6AM to 6Pm)
+                        Monday through saturday (6AM to 8Pm). sunday (6AM to 6Pm)
                     </span>
                 </div>
 

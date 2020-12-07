@@ -9,14 +9,13 @@ const AboutHome = () => {
         <section className="about-home">
             <h1 className="about-home__heading">who are we</h1> 
             <p className="about-home__block">
-                <span className="lead">We</span>, at Fit-Art are <strong>the most effective lifestyle studio</strong> in the country.We, at FitArt, believe in living healthy and happy. Our focus is to help you guide you to a better life style. We focus on nutrition, cross-fit exercise, endurance training, increasing positivity in life and much more.  Our trainers are there to help you whenever you need. They will guide you, mentor you, motivate you and help you become the best YOU. 
+                <span className="lead">We</span>, at ClickFit are <strong>the most effective lifestyle studio</strong> in the country.We, at ClickFit, believe in living healthy and happy. Our focus is to help you guide you to a better life style. We focus on nutrition, cross-fit exercise, endurance training, increasing positivity in life and much more.  Our trainers are there to help you whenever you need. They will guide you, mentor you, motivate you and help you become the best YOU. 
             </p>
             <h1 className="about-home__heading about-home__heading--sub">
                 Our Goal
             </h1>
             <p className="about-home__block">
-                 We, at FitArt, promise you to help you become healthy, fit, energetic, mentally healthy and calm. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sapiente consectetur cum esse quidem recusandae deleniti vero nobis rem aliquid reprehenderit, dolorem provident unde, quibusdam nostrum laborum facilis eaque repellendus!
-    
+                 We, at ClickFit, promise you to help you become healthy, fit, energetic, mentally healthy and calm. anyone can now stay healthy from the safety of their homes with just  single click that helps you to #BeBetterEveryDay
             </p>
             <div className="about-home-flex">
                 <div className="about-home__sub-block">
@@ -56,20 +55,8 @@ const AboutHome = () => {
                 </div>
 
             </div>
-            <div className="offer">
-                 &lt;\&gt; Our basic pack starts at 89 per month
-                 JOIN NOW BTN--> redirect to join now page
-            </div>
-            <em>featured trainer</em>
-            <em>join our health awareness seminar held by nutritionist 2</em>
-            <small>check out our trainers barrage.. link to about us</small>
-            <ul>
-                <li>review 1</li>
-                <li>review 2</li>
-                <strong>read more ... link to fitarmy</strong>
-            </ul>
-            <p>read more about our packages <strong>link to pricing</strong></p>
-            <p>mini contact and newsletter</p>
+            
+            
         </section> 
     )
 }
