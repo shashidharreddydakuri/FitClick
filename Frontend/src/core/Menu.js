@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { signout, isAutheticated } from "../auth/helper";
-
+import './Menu.css';
 const currentTab = (history, path) => {
   if (history.location.pathname === path) {
     return { color: "#2ecc72" };
@@ -12,10 +12,12 @@ const currentTab = (history, path) => {
 
 const Menu = ({ history }) => (
   <div>
-    <ul className="nav nav-tabs bg-dark">
+  
+    <ul className="nav nav-tabs NavbarItems">
+    <h1 className="navbar-logo">FitClick</h1>
       <li className="nav-item">
-        <Link style={currentTab(history, "/")} className="nav-link" to="/">
-          Home
+        <Link style={currentTab(history, "/")} className="" to="/">
+         <i class="fa fa-home" aria-hidden="true"></i> Home 
         </Link>
       </li>
       {isAutheticated() && isAutheticated().user.role === 0 &&(
