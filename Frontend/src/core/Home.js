@@ -22,8 +22,8 @@ const Home = () => {
                        <span className="header-logo">FitClick</span><br/>
                     </h2>
                     <h1 className="heading__header">
-                    Click It. <br/>
-                    Get Fit. <br/> Get on with Life.
+                    Stay Fit. <br/>
+                    Stay Healthy. <br/> Get on with Life.
                     </h1>
                 </div>
                     {/* <button 

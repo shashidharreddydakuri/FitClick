@@ -126,7 +126,7 @@ const Signup = () => {
                 </video>
                 <div className="hero-heading">
                     <h1>
-                       Signup<br/>
+                       Sign Up<br/>
                     </h1>
                     <h4 className="">
                     {successMessage()}
@@ -136,10 +136,6 @@ const Signup = () => {
                     </h4>
                     </div>
                     </header>
-      {/* {successMessage()}
-      {errorMessage()}
-      {signUpForm()} */}
-      
       <Footer/>
     </div>
   );

@@ -158,7 +158,7 @@ const AddProduct = () => {
         onClick={onSubmit}
         className="btn btn-outline-success mb-3"
       >
-        Create Product
+        Create Routine
       </button>
     </form>
   );
@@ -170,7 +170,7 @@ const AddProduct = () => {
       className="container bg-info p-4"
     >
       <Link to="/admin/dashboard" className="btn btn-md btn-dark mb-3">
-        Admin Home
+        Trainer Home
       </Link>
       <div className="row bg-dark text-white rounded">
         <div className="col-md-8 offset-md-2">

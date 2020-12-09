@@ -46,7 +46,7 @@ const Cart = () => {
           {products.length > 0 ? (
             loadAllProducts(products)
           ) : (
-            <h4>No products</h4>
+            <h4>No Exercise</h4>
           )}
         </div>
         <div className="col-6">

@@ -104,7 +104,7 @@ const Signin = () => {
               />
             </div>
             <button onClick={onSubmit} className="btn btn-success btn-block">
-              Submit
+              Get Fitness
             </button>
           </form>
         </div>
@@ -123,14 +123,14 @@ const Signin = () => {
                 </video> */}
                 <div className="hero-heading">
                     <h1>
-                       Signup<br/>
+                       Sign In<br/>
                     </h1>
                     <h4 className="">
                     {loadingMessage()}
       {errorMessage()}
       {signInForm()}
       {performRedirect()} <br/>
-                    Just One Click away from the Fitness <br/>
+                    Just One Click away to get the Fitness <br/>
                     </h4>
                     </div>
                     </header>
