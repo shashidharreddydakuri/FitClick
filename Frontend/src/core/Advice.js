@@ -13,10 +13,6 @@ import { withStyles } from '@material-ui/core/styles';
 import {getAdvices} from '../assets/js/advices-data'
 
 const styles = theme => ({
-  bgk: {
-  background: '#343a40'
-  /* background: red; */
-},
   layout: {
     width: 'auto',
     marginLeft: theme.spacing.unit * 3,
@@ -38,10 +34,6 @@ const styles = theme => ({
   cardContent: {
     flexGrow: 1,
   },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing.unit * 4,
-  },
   justify:{
     justifyContent: 'center'
   }
@@ -61,9 +53,9 @@ export class Advice extends React.Component {
     return (
     <React.Fragment>
     <Menu/>
-      <CssBaseline />
+      {/* <CssBaseline /> */}
       {this.state.cards &&
-        <div className="bgk">
+        <div>
           <main>
             <div className={classNames(classes.layout, classes.cardGrid)}>
               <Grid container spacing={40} className={classes.justify}>

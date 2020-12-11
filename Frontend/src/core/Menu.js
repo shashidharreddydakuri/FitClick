@@ -11,7 +11,7 @@ const currentTab = (history, path) => {
 };
 
 const Menu = ({ history }) => (
-  <div>
+  <div className='Navbar'>
   
     <ul className="nav nav-tabs NavbarItems">
     {/* <i class="fas fa-dumbbell"></i><h1 className="navbar-logo">FitClick</h1> */}
@@ -23,7 +23,12 @@ const Menu = ({ history }) => (
       </li>
       <li className="nav-item">
         <Link style={currentTab(history, "/advice")} className="nav-link" to="/advice">
-         <i class="fa fa-home" aria-hidden="true"></i> Advices 
+         <i className="fas fa-hand-holding-medical"></i> Advices 
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link style={currentTab(history, "/ai")} className="nav-link" to="/ai">
+         <i className="fas fa-hand-holding-medical"></i> AI 
         </Link>
       </li>
       {isAutheticated() && isAutheticated().user.role === 0 &&(

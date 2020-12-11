@@ -14,6 +14,10 @@ import ManageProducts from "./admin/ManageProducts";
 import UpdateProduct from "./admin/UpdateProduct";
 import Cart from "./core/Cart";
 import Advice from './core/Advice';
+import AI from './core/AI';
+import AIExercises from './core/AIExercises';
+import Highknees from './core/exercises/high-knees/Highknees'
+import Lateralraises from './core/exercises/lateral-raises/Lateralraises'
 
 const Routes = () => {
   return (
@@ -21,9 +25,12 @@ const Routes = () => {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/advice" exact component={Advice} />
+        <Route path="/ai" exact component={AI} />
         <Route path="/signup" exact component={Signup} />
         <Route path="/signin" exact component={Signin} />
         <Route path="/cart" exact component={Cart} />
+        <Route path="/exercises/high-knees/Highknees" exact component={Highknees} />
+        <Route path="/exercise/lateral-raises/Lateralraises" exact component={Lateralraises} />
         <PrivateRoute path="/user/dashboard" exact component={UserDashBoard} />
         <AdminRoute path="/admin/dashboard" exact component={AdminDashBoard} />
         <AdminRoute
@@ -44,6 +51,11 @@ const Routes = () => {
           exact
           component={UpdateProduct}
         />
+         {/* <AI
+          path="/core/exercises/high-knees/Highknees"
+          exact
+          component={Highknees}
+        /> */}
       </Switch>
     </BrowserRouter>
   );
