@@ -14,7 +14,7 @@ const AddCategory = () => {
   const goBack = () => (
     <div className="mt-5">
       <Link className="btn btn-sm btn-success mb-3" to="/admin/dashboard">
-        Admin Home
+        Trainer Home
       </Link>
     </div>
   );
@@ -64,7 +64,7 @@ const AddCategory = () => {
           value={name}
           autoFocus
           required
-          placeholder="For Ex. Summer"
+          placeholder="For Ex. Light weight"
         />
         <button onClick={onSubmit} className="btn btn-outline-info">
           Create Category
@@ -76,7 +76,7 @@ const AddCategory = () => {
   return (
     <Base
       title="Create a category here"
-      description="Add a new category for new tshirts"
+      description="Add a new category for routines"
       className="container bg-info p-4"
     >
       <div className="row bg-white rounded">

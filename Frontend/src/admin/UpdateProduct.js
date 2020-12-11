@@ -188,19 +188,19 @@ const UpdateProduct = ({ match }) => {
         onClick={onSubmit}
         className="btn btn-outline-success mb-3"
       >
-        Update Product
+        Update Routine
       </button>
     </form>
   );
 
   return (
     <Base
-      title="Add a product here!"
-      description="Welcome to product creation section"
+      title="Add a routines here!"
+      description="Welcome to routine creation section"
       className="container bg-info p-4"
     >
       <Link to="/admin/dashboard" className="btn btn-md btn-dark mb-3">
-        Admin Home
+        Trainer Home
       </Link>
       <div className="row bg-dark text-white rounded">
         <div className="col-md-8 offset-md-2">

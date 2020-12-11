@@ -11,7 +11,7 @@ const AdminDashBoard = () => {
   const adminLeftSide = () => {
     return (
       <div className="card">
-        <h4 className="card-header bg-dark text-white">Admin Navigation</h4>
+        <h4 className="card-header bg-dark text-white">Trainer Navigation</h4>
         <ul className="list-group">
           <li className="list-group-item">
             <Link to="/admin/create/category" className="nav-link text-success">
@@ -25,19 +25,19 @@ const AdminDashBoard = () => {
           </li>
           <li className="list-group-item">
             <Link to="/admin/create/product" className="nav-link text-success">
-              Create Product
+              Create Exercises
             </Link>
           </li>
           <li className="list-group-item">
             <Link to="/admin/products" className="nav-link text-success">
-              Manage Products
+              Manage Exercises
             </Link>
           </li>
-          <li className="list-group-item">
+          {/* <li className="list-group-item">
             <Link to="/admin/orders" className="nav-link text-success">
               Manage Orders
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     );
@@ -46,7 +46,7 @@ const AdminDashBoard = () => {
   const adminRightSide = () => {
     return (
       <div className="card mb-4">
-        <h4 className="card-header">Admin Information</h4>
+        <h4 className="card-header">Trainer Information</h4>
         <ul className="list-group">
           <li className="list-group-item">
             <span className="badge badge-success mr-2">Name:</span> {name}
@@ -56,7 +56,7 @@ const AdminDashBoard = () => {
           </li>
 
           <li className="list-group-item">
-            <span className="badge badge-danger">Admin Area</span>
+            <span className="badge badge-danger">Trainer Area</span>
           </li>
         </ul>
       </div>
@@ -64,8 +64,8 @@ const AdminDashBoard = () => {
   };
   return (
     <Base
-      title="Welcome to admin area"
-      description="Manage all of your products here"
+      title="Welcome to Trainer area"
+      description="Manage all of your Customer Routines from here"
       className="container bg-success p-4"
     >
       <div className="row">

@@ -122,8 +122,8 @@ body {
 
 .footer{
   height: 75vh;
-  /* background-image: linear-gradient(to bottom right, var(--black-2), var(--black-1), #123); */
-  background: linear-gradient(90deg, #141E30 0%,#243B55 100%);
+  /* background: linear-gradient(to bottom right, var(--black-2), var(--black-1), #123); */
+  /* background: linear-gradient(90deg, #141E30 0%,#243B55 100%); */
   display: flex;
   justify-content: center;
   align-items: center;

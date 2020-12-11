@@ -1,15 +1,4 @@
-// import React from "react";
-// import Base from "../core/Base";
 
-// const UserDashBoard = () => {
-//   return (
-//     <Base title="UserDashBoard page">
-//       <h1>THis is UserDashBoard page</h1>
-//     </Base>
-//   );
-// };
-
-// export default UserDashBoard;
 import React, { useState, useEffect } from "react";
 import "../styles.css";
 import { API } from "../backend";

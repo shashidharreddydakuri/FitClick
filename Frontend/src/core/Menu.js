@@ -15,9 +15,15 @@ const Menu = ({ history }) => (
   
     <ul className="nav nav-tabs NavbarItems">
     {/* <i class="fas fa-dumbbell"></i><h1 className="navbar-logo">FitClick</h1> */}
+    <img src='logo.png' height='50px' width='50px' padding='4px'/>
       <li className="nav-item">
-        <Link style={currentTab(history, "/")} className="" to="/">
+        <Link style={currentTab(history, "/")} className="nav-link navbar-logo" to="/">
          <i class="fa fa-home" aria-hidden="true"></i> Home 
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link style={currentTab(history, "/advice")} className="nav-link" to="/advice">
+         <i class="fa fa-home" aria-hidden="true"></i> Advices 
         </Link>
       </li>
       {isAutheticated() && isAutheticated().user.role === 0 &&(

@@ -2,7 +2,7 @@
     /* background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73,63,252,1) 100%); */
     height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
@@ -12,7 +12,7 @@
 .navbar-logo {
     color: #fff;
     justify-self: start;
-    margin-left: 20px;
+    margin-left: 200px;
     cursor: pointer;
 }
 
@@ -91,6 +91,7 @@
     .nav-links:hover {
         background-color: #7577fa;
         border-radius: 0;
+        text-decoration: none;
     }
 
     .navbar-logo {
