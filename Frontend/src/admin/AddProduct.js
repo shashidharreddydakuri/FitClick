@@ -124,7 +124,7 @@ const AddProduct = () => {
           onChange={handleChange("price")}
           type="number"
           className="form-control"
-          placeholder="Price"
+          placeholder="Points"
           value={price}
         />
       </div>
@@ -143,7 +143,7 @@ const AddProduct = () => {
             ))}
         </select>
       </div>
-      <div className="form-group">
+      {/* <div className="form-group">
         <input
           onChange={handleChange("stock")}
           type="number"
@@ -151,7 +151,7 @@ const AddProduct = () => {
           placeholder="Stock"
           value={stock}
         />
-      </div>
+      </div> */}
 
       <button
         type="submit"
@@ -165,8 +165,8 @@ const AddProduct = () => {
 
   return (
     <Base
-      title="Add a product here!"
-      description="Welcome to product creation section"
+      title="Add a Routines here!"
+      description="Welcome to Routine creation section"
       className="container bg-info p-4"
     >
       <Link to="/admin/dashboard" className="btn btn-md btn-dark mb-3">

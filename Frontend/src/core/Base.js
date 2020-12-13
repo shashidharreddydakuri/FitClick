@@ -5,7 +5,7 @@ import vid from '../assets/hero.mp4';
 import hero from '../assets/floor.jpg';
 const Base = ({
   title = "My Title",
-  description = "My desription",
+  description = "",
   className = "bg-dark text-white p-4",
   children
 }) => (
