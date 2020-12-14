@@ -32,7 +32,7 @@ export const getCategories = () => {
 
 //create a product
 export const createaProduct = (userId, token, product) => {
-  return fetch(`${API}product/create/${userId}`, {
+  return fetch(`${API}/product/create/${userId}`, {
     method: "POST",
     headers: {
       Accept: "application/json",

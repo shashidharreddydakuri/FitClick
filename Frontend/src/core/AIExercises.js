@@ -1,80 +1,56 @@
 import React from "react";
-import Base from "../core/Base";
-// import { isAutheticated } from "../auth/helper/index";
+import Menu from './Menu';
+import Footer from './Footer';
+import {Card,Button} from 'react-bootstrap'
 import { Link } from "react-router-dom";
+import squats from "../assets/images/advices/about0.gif"
+import highknees from "../assets/images/advices/about1.gif"
+import shoulderpress from "../assets/images/advices/about2.gif"
 
 const AIExercises = () => {
-
-  const adminLeftSide = () => {
-    return (
-      <div className="card">
-        <h4 className="card-header bg-dark text-white">AI Exercises</h4>
-        <ul className="list-group">
-          <li className="list-group-item">
-            <Link to="/admin/create/category" className="nav-link text-success">
-              Squat
-            </Link>
-          </li>
-          <li className="list-group-item">
-            <Link to="/exercises/high-knees/Highknees" className="nav-link text-success">
-              High Knees
-            </Link>
-          </li>
-          <li className="list-group-item">
-            <Link to="/exercise/lateral-raises/Lateralraises" className="nav-link text-success">
-              Lateral Raises
-            </Link>
-          </li>
-          <li className="list-group-item">
-            <Link to="/admin/products" className="nav-link text-success">
-              Leg Raises
-            </Link>
-          </li>
-          <li className="list-group-item">
-            <Link to="/admin/products" className="nav-link text-success">
-              Shoulder Press
-            </Link>
-          </li>
-          {/* <li className="list-group-item">
-            <Link to="/admin/orders" className="nav-link text-success">
-              Manage Orders
-            </Link>
-          </li> */}
-        </ul>
-      </div>
-    );
-  };
-
-//   const adminRightSide = () => {
-//     return (
-//       <div className="card mb-4">
-//         <h4 className="card-header">Trainer Information</h4>
-//         <ul className="list-group">
-//           <li className="list-group-item">
-//             <span className="badge badge-success mr-2">Name:</span> {name}
-//           </li>
-//           <li className="list-group-item">
-//             <span className="badge badge-success mr-2">Email:</span> {email}
-//           </li>
-
-//           <li className="list-group-item">
-//             <span className="badge badge-danger">Trainer Area</span>
-//           </li>
-//         </ul>
-//       </div>
-//     );
-//   };
   return (
-    <Base
-      title="Welcome to Trainer area"
-      description="Manage all of your Customer Routines from here"
-      className="container bg-success p-4"
-    >
-      <div className="row">
-        <div className="col-3">{adminLeftSide()}</div>
-        {/* <div className="col-9">{adminRightSide()}</div> */}
-      </div>
-    </Base>
+    <div>
+    <Menu/>
+    <div className='row container-fluid d-flex justify-content-center'>
+      <Card style={{ width: '18rem', margin:'2px' }}>
+  <Card.Img variant="top" src={squats}/>
+  {/* <img src={Squat}/> */}
+  <Card.Body>
+    
+    <Card.Text>
+     The squat is a dynamic strength training exercise that requires several muscles in your upper and lower body to work together simultaneously.
+Adding squats to your workouts can help boost your exercise performance, decrease your risk of injury, and keep you moving more easily throughout the day. But these are just a few of the benefits.
+    </Card.Text>
+    
+  </Card.Body>
+  <Button variant="primary" href="https://sandip-rocks.github.io/FitClickAi/exercises/squats/squats.html">Squart AI</Button>
+</Card>
+<Card style={{ width: '18rem', margin:'2px' }}>
+  <Card.Img variant="top"src={highknees}/>
+  <Card.Body>
+   
+    <Card.Text  className="text-center">
+      The high knees exercise is a combination of the run in place with exaggerated knee lifts.
+      You should start this exercise slowly and with few repetitions. Start with 30 second sets and, once you’re comfortable with the exercise, add some extra challenges. You can lift your knees higher, increase the duration of the sets or perform the exercise at a faster pace.
+    </Card.Text>
+    
+  </Card.Body>
+  <Button variant="primary" href='https://sandip-rocks.github.io/FitClickAi/exercises/high-knees/high-knees.html'>High Knees AI</Button>
+</Card>
+<Card style={{ width: '18rem', margin:'2px'}}>
+  <Card.Img variant="top" src={shoulderpress} />
+  <Card.Body>
+    
+    <Card.Text  className="text-center">
+      The overhead press is often called the shoulder press, but while all three heads of your shoulders are indeed working with the lift, they’re far from the only muscles used. Your abs, your lower back and the muscles surrounding your shoulder blades are all involved in pressing the weight overhead, and if you progress to a standing version of the exercise your glutes, hamstrings and quads are also enlisted to add stability.
+    </Card.Text>
+    
+  </Card.Body>
+  <Button variant="primary" href='https://sandip-rocks.github.io/FitClickAi/exercises/shoulder-press/shoulder-press.html'>Shoulder Press AI</Button>
+</Card>
+</div>
+    <Footer/>
+    </div>
   );
 };
 

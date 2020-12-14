@@ -25,7 +25,7 @@ export default function UserDashBoard() {
   }, []);
 
   return (
-     <Base title="UserDashBoard">
+     <Base title="UserDashBoard page">
       <div className="row text-center">
         <h1 className="text-white">Exercise Assigned</h1>
         <div className="row">

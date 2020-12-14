@@ -27,11 +27,24 @@ const Menu = ({ history }) => (
          <i className="fas fa-hand-holding-medical"></i> Advices 
         </Link>
       </li>
-      <li className="nav-item">
+      {/* {isAutheticated() && isAutheticated().user.role === 0 && (
+        <li className="nav-item">
         <Link style={currentTab(history, "/ai")} className="nav-link" to="/ai">
          <i className="fas fa-hand-holding-medical"></i> AI 
         </Link>
       </li>
+      )} */}
+      {isAutheticated() && isAutheticated().user.role === 0 &&(
+        <li className="nav-item">
+        <Link
+          style={currentTab(history, "/ai")}
+          className="nav-link"
+          to="/ai"
+        >
+          AI
+        </Link>
+      </li>
+      )}
       {isAutheticated() && isAutheticated().user.role === 0 &&(
         <li className="nav-item">
         <Link

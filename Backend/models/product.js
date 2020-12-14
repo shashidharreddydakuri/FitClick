@@ -24,11 +24,10 @@ const productSchema = new mongoose.Schema(
     category: {
       type: ObjectId,
       ref: "Category",
-      required: true
+      required: false
     },
     stock: {
-      type: Number,
-      default:10000
+      type: Number
     },
     sold: {
       type: Number,
