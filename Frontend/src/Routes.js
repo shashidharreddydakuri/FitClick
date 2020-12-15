@@ -15,45 +15,47 @@ import UpdateProduct from "./admin/UpdateProduct";
 import Cart from "./core/Cart";
 import Advice from './core/Advice';
 import AI from './core/AI';
+import AboutHome from "./core/AboutHome";
 
 const Routes = () => {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/advice" exact component={Advice} />
-        <Route path="/ai" exact component={AI} />
-        <Route path="/signup" exact component={Signup} />
-        <Route path="/signin" exact component={Signin} />
-        <Route path="/cart" exact component={Cart} />
-        <PrivateRoute path="/user/dashboard" exact component={UserDashBoard} />
-        <AdminRoute path="/admin/dashboard" exact component={AdminDashBoard} />
-        <AdminRoute
-          path="/admin/create/category"
-          exact
-          component={AddCategory}
-        />
-        <AdminRoute
-          path="/admin/categories"
-          exact
-          component={ManageCategories}
-        />
-        <AdminRoute path="/admin/create/product" exact component={AddProduct} />
+		<BrowserRouter>
+			<Switch>
+				<Route path="/" exact component={Home} />
+				<Route path="/About" exact component={AboutHome} />
+				<Route path="/advice" exact component={Advice} />
+				<Route path="/ai" exact component={AI} />
+				<Route path="/signup" exact component={Signup} />
+				<Route path="/signin" exact component={Signin} />
+				<Route path="/cart" exact component={Cart} />
+				<PrivateRoute path="/user/dashboard" exact component={UserDashBoard} />
+				<AdminRoute path="/admin/dashboard" exact component={AdminDashBoard} />
+				<AdminRoute
+					path="/admin/create/category"
+					exact
+					component={AddCategory}
+				/>
+				<AdminRoute
+					path="/admin/categories"
+					exact
+					component={ManageCategories}
+				/>
+				<AdminRoute path="/admin/create/product" exact component={AddProduct} />
 
-        <AdminRoute path="/admin/products" exact component={ManageProducts} />
-        <AdminRoute
-          path="/admin/product/update/:productId"
-          exact
-          component={UpdateProduct}
-        />
-         {/* <AI
+				<AdminRoute path="/admin/products" exact component={ManageProducts} />
+				<AdminRoute
+					path="/admin/product/update/:productId"
+					exact
+					component={UpdateProduct}
+				/>
+				{/* <AI
           path="/core/exercises/high-knees/Highknees"
           exact
           component={Highknees}
         /> */}
-      </Switch>
-    </BrowserRouter>
-  );
+			</Switch>
+		</BrowserRouter>
+	);
 };
 
 export default Routes;
