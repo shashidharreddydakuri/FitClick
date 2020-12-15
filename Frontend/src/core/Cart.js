@@ -22,7 +22,7 @@ const Cart = () => {
           <Card
             key={index}
             product={product}
-            removeFromCart={true}
+            // removeFromCart={true}
             addtoCart={false}
             setReload={setReload}
             reload={reload}

@@ -13,7 +13,7 @@ const AdminDashBoard = () => {
       <div className="card">
         <h4 className="card-header bg-dark text-white">Trainer Navigation</h4>
         <ul className="list-group">
-          <li className="list-group-item">
+          {/* <li className="list-group-item">
             <Link to="/admin/create/category" className="nav-link text-success">
               Create Categories
             </Link>
@@ -22,7 +22,7 @@ const AdminDashBoard = () => {
             <Link to="/admin/categories" className="nav-link text-success">
               Manage Categories
             </Link>
-          </li>
+          </li> */}
           <li className="list-group-item">
             <Link to="/admin/create/product" className="nav-link text-success">
               Create Exercises

@@ -4,7 +4,7 @@ import Menu from './Menu';
 import vid from '../assets/hero.mp4';
 import hero from '../assets/floor.jpg';
 import Footer from './Footer';
-import { FaAngleDown } from 'react-icons/fa';
+//  import { FaAngleDown } from 'react-icons/fa';
 // import AboutHome from './AboutHome';
 
 const Home = () => {

@@ -11,7 +11,7 @@ const AddProduct = () => {
     name: "",
     description: "",
     price: "",
-    stock: "",
+    // stock: "",
     photo: "",
     categories: [],
     category: "",
@@ -26,7 +26,7 @@ const AddProduct = () => {
     name,
     description,
     price,
-    stock,
+    // stock,
     categories,
     category,
     loading,
@@ -64,7 +64,7 @@ const AddProduct = () => {
           description: "",
           price: "",
           photo: "",
-          stock: "",
+          // stock: "",
           loading: false,
           createdProduct: data.name
         });
@@ -124,11 +124,11 @@ const AddProduct = () => {
           onChange={handleChange("price")}
           type="number"
           className="form-control"
-          placeholder="Price"
+          placeholder="Points"
           value={price}
         />
       </div>
-      <div className="form-group">
+      {/* <div className="form-group">
         <select
           onChange={handleChange("category")}
           className="form-control"
@@ -142,8 +142,8 @@ const AddProduct = () => {
               </option>
             ))}
         </select>
-      </div>
-      <div className="form-group">
+      </div> */}
+      {/* <div className="form-group">
         <input
           onChange={handleChange("stock")}
           type="number"
@@ -151,7 +151,7 @@ const AddProduct = () => {
           placeholder="Stock"
           value={stock}
         />
-      </div>
+      </div> */}
 
       <button
         type="submit"
@@ -165,8 +165,8 @@ const AddProduct = () => {
 
   return (
     <Base
-      title="Add a product here!"
-      description="Welcome to product creation section"
+      title="Add a Exercise here!"
+      description="Welcome to Exercise creation section"
       className="container bg-info p-4"
     >
       <Link to="/admin/dashboard" className="btn btn-md btn-dark mb-3">

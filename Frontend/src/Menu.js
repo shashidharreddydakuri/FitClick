@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { signout, isAutheticated } from "../auth/helper";
+import logo from './logo.png'
 import './Menu.css';
-import logo from './logo.png';
 const currentTab = (history, path) => {
   if (history.location.pathname === path) {
     return { color: "#2ecc72" };
@@ -27,10 +27,21 @@ const Menu = ({ history }) => (
          <i className="fas fa-hand-holding-medical"></i> Advices 
         </Link>
       </li>
-      {isAutheticated() && isAutheticated().user.role === 0 &&(
-      <li className="nav-item">
+      {/* {isAutheticated() && isAutheticated().user.role === 0 && (
+        <li className="nav-item">
         <Link style={currentTab(history, "/ai")} className="nav-link" to="/ai">
          <i className="fas fa-hand-holding-medical"></i> AI 
+        </Link>
+      </li>
+      )} */}
+      {isAutheticated() && isAutheticated().user.role === 0 &&(
+        <li className="nav-item">
+        <Link
+          style={currentTab(history, "/ai")}
+          className="nav-link"
+          to="/ai"
+        >
+          AI
         </Link>
       </li>
       )}
